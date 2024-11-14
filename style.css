@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
 header {
@@ -15,12 +16,23 @@ header {
     color: #fff;
     padding: 2rem;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Icona luna per il cambio tema */
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Stile per i post */
 .posts {
     padding: 2rem;
 }
@@ -51,4 +63,22 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Tema scuro */
+body.dark-theme {
+    background: #222;
+    color: #ddd;
+}
+
+body.dark-theme header {
+    background: #333;
+}
+
+body.dark-theme article {
+    background: #444;
+}
+
+body.dark-theme footer {
+    background: #111;
 }
